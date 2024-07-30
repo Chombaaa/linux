@@ -1,0 +1,49 @@
+1.Navigation and Directory Management
+- pwd: Print Working Directory - Displays the current directory path.
+- ls: List - Lists files and directories in the current directory.
+  -ls -l: Lists in long format, showing permissions, number of links, owner, group, size, and modification date.
+  - ls -a: Includes hidden files (files starting with `.`).
+- cd [directory]: Change Directory - Changes the current directory to the specified one.
+  - cd : Moves up one directory.
+  - cd : Moves to the home directory.
+- mkdir [directory]: Make Directory - Creates a new directory.
+- rmdir [directory]: Remove Directory - Deletes an empty directory.
+
+
+ 2. Permissions
+-chmod [mode] [file]: Change Mode - Changes the permissions of a file or directory.
+  - Example: `chmod 755 myfile` sets the permissions to read, write, and execute for the owner, and read and execute for others.
+
+3.Process Management
+- ps: Process Status - Lists currently running processes.
+- top: Displays dynamic real-time view of the running system, including processes.
+- kill [PID]: Terminates a process using its Process ID (PID).
+  - kill -9 [PID]: Forcefully terminates a process.
+ 4.Networking and System Information
+- ifconfig: Interface Configuration - Displays network configuration details.
+- ping [hostname] Sends ICMP ECHO_REQUEST packets to network hosts.
+- hostname: Displays or sets the system’s hostname.
+- uname -a: Displays detailed information about the system.
+
+5.Package Management (for Debian-based systems)
+- apt-get update: Updates the package list.
+- apt-get upgrade: Upgrades all packages.
+- apt-get install [package]: Installs a new package.
+- apt-get remove [package]: Removes a package.
+
+6.File Compression and Archiving
+- tar -czvf [archive.tar.gz] [directory]: Creates a compressed archive of a directory.
+- tar -xzvf [archive.tar.gz]: Extracts a compressed archive.
+ 7. File Operations
+- touch [file]: Creates an empty file or updates the timestamp of an existing file.
+- cp [source] [destination]: Copy - Copies files or directories.
+  - cp -r [source] [destination]: Recursively copies directories.
+- mv [source] [destination]: Move - Moves or renames files or directories.
+- rm [file]: Remove - Deletes files.
+  - rm -r [directory]: Recursively deletes a directory and its contents.
+- cat [file]: Concatenate - Displays the content of a file.
+- more [file]: View file content one page at a time.
+- less [file]: Similar to `more`, but allows backward movement in the file.
+- head [file]: Displays the first few lines of a file.
+- tail [file]: Displays the last few lines of a file.
+  - tail -f [file]: Follows the output of a file in real-time (useful for logs).
